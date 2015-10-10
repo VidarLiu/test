@@ -1,0 +1,85 @@
+*{margin: 0;padding: 0}
+#hongbao{
+	width: 100%;
+	background:#FEFFE1;
+	position: relative;
+	overflow: hidden;
+}
+.hongbao-logo{
+	margin:3rem 0;
+	height: 200px;
+}
+.hongbao-logo img{
+	max-height:200px;
+}
+h2.hongbao-title{
+	font-size: 6rem;
+	color: #dc0000;
+	text-align: center;
+	line-height: 1.5
+}
+h3.hongbao-subtitle{
+	font-size: 5rem;
+	color: #444;
+	text-align: center;
+	line-height: 1.5;
+}
+.hongbao-bg{
+	width: 90%;
+	height:1100px;
+	background: url(../images/017d1755fcd33e6ac7251df868e1f2.jpg) no-repeat left top;
+	background-size:  100%;
+	margin:0 auto;
+	position: absolute;
+	left: 50%;
+	margin-left: -45%;
+	bottom:0;
+}
+.hongbao-bg .userhead{
+	width:14rem;
+	height:14rem;
+	background: #fff;
+	margin: 2rem auto;
+	border-radius: 50%;
+}
+.hongbao-bg .username{
+	font-size: 3rem;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.hongbao-bg .usersay{
+	font-size: 2rem;
+	color: #fff;
+	text-align: center;
+}
+.hongbao-bg .hongbao-open{
+	height:14rem;
+	margin:3rem 0;
+}
+#masker{
+	width:100%;
+	background: rgba(0,0,0,.7);
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 1000;
+	display: none;
+}
+#masker .hongbao-show{
+	width:30%;
+	margin: 0 auto;
+	margin-top:40%;
+}
+#masker .hongbao-show img{
+	width: 100%;
+}
+#masker .masker-tip{
+	margin: 2rem 0;
+	text-align: center;
+	color: #dc0000;
+	font-size: 4rem;
+}
+#masker .masker-tip.success{
+	color: #fff
+}
