@@ -6,6 +6,8 @@ $(function(){
 	$("#left-bar").height(browserHeight)
 	$("#right-container").height(browserHeight)
 	$(".content-list").height(contentHeight)
+	$("#login-container").height(browserHeight)
+	$("#login-container .login-frame").css({top:browserHeight/2,marginTop:-$("#login-container .login-frame").height()/2-60})
 
 	window.onresize = function(){
 		browserHeight = document.documentElement.clientHeight;
@@ -15,6 +17,8 @@ $(function(){
 		$("#left-bar").height(browserHeight)
 		$("#right-container").height(browserHeight)
 		$(".content-list").height(contentHeight)
+		$("#login-container").height(browserHeight)
+		$("#login-container .login-frame").top(browserHeight/2)
 	}
 
 	$(".qa-list li").each(function(i){

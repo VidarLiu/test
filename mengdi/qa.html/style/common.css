@@ -395,10 +395,10 @@ ul.rules-list li p.time{
 	font-family: serif;
 }
 .login-frame li input.username{
-	background: url(../images/icon_index1.jpg) no-repeat 20px center;
+	background: url(../images/icon_index1.jpg) no-repeat 20px center #fff;
 }
 .login-frame li input.password{
-	background: url(../images/icon_index2.jpg) no-repeat 20px center;
+	background: url(../images/icon_index2.jpg) no-repeat 20px center #fff;
 }
 .login-frame li button,
 .login-frame li input[type="button"],
@@ -413,3 +413,29 @@ ul.rules-list li p.time{
 	cursor: pointer;
 	font-size: 20px;
 	margin-top:20px;
+}
+.login-qa{
+	background: url(../images/index_bg.jpg) no-repeat left bottom #dfeaef;
+	background-size: 60%;
+	position: relative;
+}
+.login-bb{
+	background: url(../images/loginBG2.jpg) no-repeat left bottom #dfeaef;
+	background-size: 100% 100%;
+	position: relative;
+}
+.login-qa .login-frame,
+.login-bb .login-frame{
+	position: absolute;
+	left: 50%;
+}
+.login-qa li button:last-child,
+.login-bb li button:last-child{
+	width: 190px;
+	margin-left: 10px;
+	background: #056caf;
+}
+.logo-qa,
+.logo-bb{
+	margin-bottom: 60px;
+}
