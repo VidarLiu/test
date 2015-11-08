@@ -8,7 +8,9 @@ img{border:none}
 a{text-decoration:none;color:#8e8e8e;}a:active{color: #000}
 a:hover{text-decoration:none;}a:visited{color:#8e8e8e;text-shadow:0 1px 0 #fff}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clearfix{zoom:1;display:inline-block;_height:1px}*html .clearfix{height:1%}*+html .clearfix{height:1%}.clearfix{display:block}.alignleft{float:left;}.alignright{float:right;}
-
+#container{
+	min-width: 850px;
+}
 #masker{
 	width:100%;
 	background: rgba(0,0,0,.5);
