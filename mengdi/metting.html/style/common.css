@@ -215,14 +215,11 @@ a:hover{text-decoration:none;}a:visited{color:#8e8e8e;text-shadow:0 1px 0 #fff}
 	border-radius: 2px;
 	padding:23px 30px;
 	display: -webkit-box;
-	display: -moz-box;
 	display: box;
 }
 .header .search-frame input[type=text]{
 	display: block;
 	-webkit-box-flex : 1;
-	-moz-box-flex:1;
-	box-flex:1;
 	background: #fff;
 	border-radius: 4px;
 	height:34px;
@@ -244,13 +241,9 @@ a:hover{text-decoration:none;}a:visited{color:#8e8e8e;text-shadow:0 1px 0 #fff}
 	cursor: pointer;
 }
 .tab-frame{
-	width: 100%;
 	display: -webkit-box;
-	display: -moz-box;
 	display: box;
 	-webkit-box-align:center;
-	-moz-box-align:center;
-	box-align:center;
 	height:80px;
 	border-bottom: 1px solid #ccc;
 	padding: 0 30px;
@@ -346,7 +339,6 @@ ul.data-list li:nth-child(even){
 }
 ul.rules-list li{
 	display: -webkit-box;
-	display: -moz-box;
 	display: box;
 	border-bottom: 1px solid #e9e9e9;
 }
@@ -354,15 +346,11 @@ ul.rules-list li p{
 	padding:15px 30px;
 	border-right:1px solid #e9e9e9; 
 	display: -webkit-box;
-	display: -moz-box;
 	display: box;
 	-webkit-box-align:center;
-	-moz-box-align:center;
-	box-align:center;
 }
 ul.rules-list li p.title{
 	-webkit-box-flex:1;
-	-moz-box-flex:1;
 	box-flex:1;
 }
 }
