@@ -385,6 +385,7 @@ ul.data-list li:nth-child(even){
 	background: #f7f7f7;
 }
 ul.rules-list li{
+	width: 100%;
 	display: -webkit-box;
 	display: box;
 	border-bottom: 1px solid #e9e9e9;
