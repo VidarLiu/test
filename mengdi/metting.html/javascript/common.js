@@ -46,4 +46,6 @@ $(function(){
 		$("#masker").hide()
 		$(".pop-window").hide()
 	})
+
+	if(!+[1,]){console.log("ie")}else{console.log("not ie")}
 })
