@@ -46,8 +46,9 @@ $(function(){
 		$("#masker").hide()
 		$(".pop-window").hide()
 	})
-
-	if(isIE(9) || isIE(10)){
+	console.log(navigator.userAgent.search("MSIE"),navigator.userAgent)
+	if(navigator.userAgent.search("MSIE") !== -1 || navigator.userAgent.search("Windows") !== -1){
+		console.log(11)
 		var ph = '';
 		placeholder("input");
 		placeholder("textarea");
