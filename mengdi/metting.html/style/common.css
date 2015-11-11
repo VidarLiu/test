@@ -225,8 +225,8 @@ a:hover{text-decoration:none;}a:visited{color:#8e8e8e;text-shadow:0 1px 0 #fff}
 	-webkit-box-flex : 1;
 	-moz-box-flex : 1;
 	box-flex : 1;
-	float:left\9;
-	width: 80%\9;
+	float:left;
+	width: 80%;
 	background: #fff;
 	border-radius: 4px;
 	height:34px;
@@ -305,6 +305,7 @@ a:hover{text-decoration:none;}a:visited{color:#8e8e8e;text-shadow:0 1px 0 #fff}
 }
 .tab-frame .tab-list{
 	list-style: none;
+	padding:25px 0;
 }
 .tab-frame .tab-list li{
 	line-height: 30px;

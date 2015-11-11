@@ -18,7 +18,7 @@ $(function(){
 		$("#right-container").height(browserHeight)
 		$(".content-list").height(contentHeight)
 		$("#login-container").height(browserHeight)
-		$("#login-container .login-frame").top(browserHeight/2)
+		$("#login-container .login-frame").css({top:browserHeight/2})
 	}
 
 	$(".qa-list li").each(function(i){
@@ -47,5 +47,45 @@ $(function(){
 		$(".pop-window").hide()
 	})
 
-	if(!+[1,]){console.log("ie")}else{console.log("not ie")}
+	if(isIE(9) || isIE(10)){
+		var ph = '';
+		placeholder("input");
+		placeholder("textarea");
+		function placeholder(elems){
+			$(elems).each(function(i){
+			if($(this).attr("placeholder") && $(this).attr("type") !== "password"){
+				$(this).val($(this).attr("placeholder"))
+			}else if($(this).attr("type") == "password"){
+				$(this).attr("type","text").attr("data-type","password")
+				$(this).val($(this).attr("placeholder"))
+			}
+
+			$(this).focus(function(){
+				ph = $(this).attr("placeholder");
+				if($(this).val() == ph && $(this).attr("data-type") !== "password"){
+					$(this).val('')
+				}else if($(this).attr('data-type') == "password"){
+					$(this).attr("type","password")
+					$(this).val('')
+				}
+			})
+			$(this).blur(function(){
+				if($(this).val() == '' && $(this).attr("data-type") !== "password"){
+					$(this).val(ph)
+				}else if($(this).val() == '' && $(this).attr('data-type') == "password"){
+					$(this).attr("type","text")
+					$(this).val(ph)
+				}
+				
+			})
+		})
+		}
+		
+	}
+
+	function isIE(ver){
+		var b = document.createElement("b");
+		b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->';
+		return b.getElementsByTagName('i').length === 1;
+	}
 })
