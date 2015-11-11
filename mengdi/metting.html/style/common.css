@@ -398,10 +398,14 @@ ul.rules-list li{
 	display: -moz-box;
 	display: box;
 	border-bottom: 1px solid #e9e9e9;
+	clear: both;
 }
 ul.rules-list li p{
 	padding:15px 30px;
 	border-right:1px solid #e9e9e9; 
+	float: left\0;
+	width: 67%\0;
+	line-height: 1.5\0;
 	display: -webkit-box;
 	display: -moz-box;
 	display: box;
@@ -428,6 +432,7 @@ ul.rules-list li p.icon img{
 ul.rules-list li p.time{
 	width:100px;
 	color: #8e8e8e;
+	border-right: none;
 }
 ul.metting-list li{
 	padding: 0 20px;
@@ -535,23 +540,23 @@ ul.metting-list .time-line{
 }
 #page-menu li span.icon-metting {
 	margin-top: 40px;
-	background: url(../images/icon_1.jpg) no-repeat center top;
+	background: url(../images/icon_1.png) no-repeat center top;
 }
 #page-menu li span.icon-metting:hover{
-	background: url(../images/icon_2.jpg) no-repeat center top;
+	background: url(../images/icon_2.png) no-repeat center top;
 }
 #page-menu li span.icon-account {
-	background: url(../images/icon_4.jpg) no-repeat center top;
+	background: url(../images/icon_4.png) no-repeat center top;
 	margin-bottom: 100px;
 }
 #page-menu li span.icon-account:hover{
-	background: url(../images/icon_3.jpg) no-repeat center top;
+	background: url(../images/icon_3.png) no-repeat center top;
 }
 #page-menu li span.icon-logout{
-	background: url(../images/icon_7.jpg) no-repeat center top;
+	background: url(../images/icon_7.png) no-repeat center top;
 }
 #page-menu li span.icon-logout:hover{
-	background: url(../images/icon_72.jpg) no-repeat center top;
+	background: url(../images/icon_72.png) no-repeat center top;
 }
 .metting-form{
 	width:100%;
