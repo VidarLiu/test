@@ -42,6 +42,11 @@ $(function(){
 		})
 	})
 
+	$(".answer-btn").click(function(){
+		$("#masker").show().height(browserHeight);
+		$(".pop-qa-detail").show()
+	})
+
 	$(".close").click(function(){
 		$("#masker").hide()
 		$(".pop-window").hide()
